@@ -17,6 +17,8 @@ const validateUser = (obj) => {
 };
 
 app.post("/sign-up", (req, res) => {
+  //   const obj = req.body;
+  //   const response = validateUser(obj);
   const response = validateUser(req.body);
   console.log(response);
   if (!response.success) {
@@ -27,6 +29,7 @@ app.post("/sign-up", (req, res) => {
     res.status(200).json({
       msg: "Ok",
       state: "All good good to go",
+      data: response.data,
     });
   }
 });
