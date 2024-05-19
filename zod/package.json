@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "start-run": "nodemon server2.js",
     "test": "jest"
   },
   "keywords": [
@@ -14,7 +15,8 @@
   "author": "Vasanth R",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
