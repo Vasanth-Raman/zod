@@ -26,6 +26,7 @@ app.post("/health-checkup", (req, res) => {
   //   const kidndeyLength = kidneys.length;
 
   //   res.send(`You have ${kidndeyLength} kidney's`);
+  // it is ok
 });
 
 app.listen(port, (err) => {
